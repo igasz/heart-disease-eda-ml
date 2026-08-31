@@ -1,4 +1,4 @@
-# Heart Disease Exploratory Data Analysis (EDA) 🫀
+# Heart Disease Exploratory Data Analysis (EDA & ML) 🫀
 **Author:** Iga Szaflik
 
 This repository contains a comprehensive Exploratory Data Analysis (EDA) of a clinical Heart Disease dataset. The goal of this project is to investigate the mathematical and statistical relationships between various medical test results and the likelihood of a heart disease diagnosis.
