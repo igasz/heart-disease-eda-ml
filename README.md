@@ -22,6 +22,7 @@ During the analysis, several fascinating patterns emerged:
 1. **Strongest Predictors:** The mathematical correlation matrix proved that ST depression (`oldpeak`) and exercise-induced angina (`exang`) have the strongest predictive power, showing a powerful *inverse* relationship with the disease.
 ![Correlation Heatmap](images/correlation-matrix.jpg)
 4. **Safety-First Machine Learning:** A Logistic Regression model was trained to predict disease presence, achieving ~82% accuracy. The Confusion Matrix revealed that the model is "over-cautious"—it minimizes critical medical errors (False Negatives) at the cost of triggering more false alarms (False Positives).
+
 ![Confusion Matrix](images/confusion_matrix.png)
 1. **Exposing AI Data Bias:** When testing the model on custom data for a healthy 21-year-old, the AI predicted an 89.8% risk of heart disease. Cross-referencing this with the EDA revealed a severe **small sample size bias**: the dataset contained only 4 patients in the 20-30 age group, and 100% of them were sick. The model falsely learned that being in your 20s guarantees disease, perfectly illustrating why domain knowledge and data distribution context are strictly necessary before trusting AI.
 
