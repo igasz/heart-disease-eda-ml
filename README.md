@@ -10,7 +10,7 @@ This project goes beyond simple predictions. It focuses heavily on **Data Unders
 * **Python 3.x**
 * **Pandas** (Data manipulation, grouping, binning, and statistical aggregations)
 * **Matplotlib** (Advanced visualizations: Heatmaps, Boxplots, Grouped Bar Charts, and Multivariate Bubble Charts)
-* * **Scikit-learn** (Machine Learning: Logistic Regression, StandardScaler, Train/Test Split, Confusion Matrix)
+* **Scikit-learn** (Machine Learning: Logistic Regression, StandardScaler, Train/Test Split, Confusion Matrix)
 * **Jupyter Notebook** (Interactive environment)
 
 ## Key Insights Discovered
