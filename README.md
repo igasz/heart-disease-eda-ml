@@ -10,6 +10,7 @@ This project focuses heavily on **Data Understanding, Feature Engineering, and D
 * **Python 3.x**
 * **Pandas** (Data manipulation, grouping, binning, and statistical aggregations)
 * **Matplotlib** (Advanced visualizations: Heatmaps, Boxplots, Grouped Bar Charts, and Multivariate Bubble Charts)
+* * **Scikit-learn** (Machine Learning: Logistic Regression, StandardScaler, Train/Test Split, Confusion Matrix)
 * **Jupyter Notebook** (Interactive environment)
 
 ## Key Insights Discovered
@@ -20,6 +21,9 @@ During the analysis, several fascinating patterns emerged:
 ![Multivariate Analysis](images/multivariate.png)
 1. **Strongest Predictors:** The mathematical correlation matrix proved that ST depression (`oldpeak`) and exercise-induced angina (`exang`) have the strongest predictive power, showing a powerful *inverse* relationship with the disease.
 ![Correlation Heatmap](images/correlation-matrix.jpg)
+4. **Safety-First Machine Learning:** A Logistic Regression model was trained to predict disease presence, achieving ~82% accuracy. The Confusion Matrix revealed that the model is "over-cautious"—it minimizes critical medical errors (False Negatives) at the cost of triggering more false alarms (False Positives).
+![Confusion Matrix](images/confusion_matrix.png)
+1. **Exposing AI Data Bias:** When testing the model on custom data for a healthy 21-year-old, the AI predicted an 89.8% risk of heart disease. Cross-referencing this with the EDA revealed a severe **small sample size bias**: the dataset contained only 4 patients in the 20-30 age group, and 100% of them were sick. The model falsely learned that being in your 20s guarantees disease, perfectly illustrating why domain knowledge and data distribution context are strictly necessary before trusting AI.
 
 ## How to Run the Project
 1. Clone this repository to your local machine:
@@ -28,7 +32,7 @@ During the analysis, several fascinating patterns emerged:
    ```
 2. Navigate to the project directory and install the required dependencies:
     ```bash
-    pip install pandas matplotlib numpy
+    pip install pandas matplotlib numpy scikit-learn
     ```
 3. Open the Jupyter Notebook:
     ```bash
