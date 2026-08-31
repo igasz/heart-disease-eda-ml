@@ -1,10 +1,10 @@
 # Heart Disease Exploratory Data Analysis (EDA & ML) 🫀
 **Author:** Iga Szaflik
 
-This repository contains a comprehensive Exploratory Data Analysis (EDA) of a clinical Heart Disease dataset. The goal of this project is to investigate the mathematical and statistical relationships between various medical test results and the likelihood of a heart disease diagnosis.
+This repository contains a comprehensive Exploratory Data Analysis (EDA) and a Machine Learning pipeline for a clinical Heart Disease dataset. The goal of this project is to investigate the relationships between medical test results, build a diagnostic predictive model, and expose the dangers of data bias in AI.
 
 ## Project Overview
-This project focuses heavily on **Data Understanding, Feature Engineering, and Data Visualization**. By using custom `matplotlib` charts, the analysis uncovers several highly counterintuitive medical trends within the data that simple predictive models might misinterpret without proper context.
+This project goes beyond simple predictions. It focuses heavily on **Data Understanding, Feature Engineering, and Explainable AI**. By using custom `matplotlib` charts, the analysis uncovers highly counterintuitive medical trends. Furthermore, it implements an industry-standard Logistic Regression model and tests it against custom, out-of-distribution data to demonstrate how small sample sizes can critically skew AI logic.
 
 ## Technologies Used
 * **Python 3.x**
