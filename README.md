@@ -24,7 +24,7 @@ During the analysis, several fascinating patterns emerged:
 ## How to Run the Project
 1. Clone this repository to your local machine:
    ```bash
-   git clone [https://github.com/igasz/heart-disease-eda.git](https://github.com/igasz/heart-disease-eda.git)
+   git clone https://github.com/igasz/heart-disease-eda.git
    ```
 2. Navigate to the project directory and install the required dependencies:
     ```bash
